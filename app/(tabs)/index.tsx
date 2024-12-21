@@ -10,8 +10,9 @@ export default function Index() {
       <View style={styles.imageContainer}>
         <ImageViewer imgSource={placeholderImage} />
       </View>
+
       <View style={styles.footerContainer}>
-        <Button label="Choose a photo" />
+        <Button theme="primary" label="Choose a photo" />
         <Button label="Use this photo" />
       </View>
     </View>
@@ -21,21 +22,15 @@ export default function Index() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "center",
     alignItems: "center",
     backgroundColor: "#25292e",
   },
   imageContainer: {
     flex: 1,
-  },
-  image: {
-    width: 320,
-    height: 440,
-    borderRadius: 18,
+    paddingTop: 28,
   },
   footerContainer: {
     flex: 1 / 3,
     alignItems: "center",
-    backgroundColor: "#25292e",
   },
 });
